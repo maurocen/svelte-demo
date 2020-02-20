@@ -1,0 +1,56 @@
+@import '../globals.scss';
+
+.topbar {
+  align-items: center;
+  background-color: $white;
+  box-shadow: $box-shadow;
+  box-sizing: border-box;
+  color: $main-text-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 20px;
+  user-select: none;
+  width: 100vw;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+  }
+
+  &__logo {
+    height: 40px;
+  }
+
+  &__left-side {
+    &, & a {
+      display: flex;
+
+      @media screen and (max-width: 800px) {
+        flex-direction: column;
+      }
+    }
+
+  }
+
+  &__title {
+    color: $titles-color;
+    margin: auto;
+    margin-left: 15px;
+    user-select: none;
+
+    @media screen and (max-width: 800px) {
+      margin-left: 0;
+    };
+  }
+
+  &__button {
+    background: none;
+    border: 0;
+    color: $links-color;
+    cursor: pointer;
+    line-height: 1;;
+    margin: auto;
+    text-decoration: none !important;
+    user-select: none;
+  }
+}

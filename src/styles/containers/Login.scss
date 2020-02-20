@@ -1,0 +1,11 @@
+@import '../globals.scss';
+
+.login {
+  align-items: center;
+  background-color: $background-color;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  height: 100vh;
+  justify-content: center;
+}

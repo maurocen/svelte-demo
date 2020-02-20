@@ -1,0 +1,14 @@
+@import '../globals.scss';
+
+.layout {
+  background-color: $background-color;
+  min-height: 100vh;
+
+  &__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    padding: 40px 0 30px;
+  }
+}
